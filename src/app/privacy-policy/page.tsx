@@ -78,9 +78,9 @@ export default function PrivacyPolicy() {
             If you have any questions about this Privacy Policy, please contact us at:
           </p>
           <p>
-            <strong>Phone:</strong> [PHONE NUMBER]<br />
-            <strong>WhatsApp:</strong> [WHATSAPP NUMBER]<br />
-            <strong>Email:</strong> [EMAIL ADDRESS]
+            <strong>Phone:</strong> +92 349 8199472<br />
+            <strong>WhatsApp:</strong> +92 349 8199472<br />
+            <strong>Email:</strong> rajakhalilahmad76@gmail.com
           </p>
 
           <h2 className="text-xl font-bold text-navy mt-8">8. Changes to This Policy</h2>

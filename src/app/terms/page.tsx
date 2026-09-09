@@ -86,9 +86,9 @@ export default function TermsOfService() {
             For any questions regarding these Terms of Service:
           </p>
           <p>
-            <strong>Phone:</strong> [PHONE NUMBER]<br />
-            <strong>WhatsApp:</strong> [WHATSAPP NUMBER]<br />
-            <strong>Email:</strong> [EMAIL ADDRESS]
+            <strong>Phone:</strong> +92 349 8199472<br />
+            <strong>WhatsApp:</strong> +92 349 8199472<br />
+            <strong>Email:</strong> rajakhalilahmad76@gmail.com
           </p>
         </div>
       </div>

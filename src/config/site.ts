@@ -3,16 +3,16 @@ export const siteConfig = {
   title: 'Khalil Ahmad | AC & Home Appliance Repair Services',
   description: 'Professional AC, refrigerator, washing machine and microwave repair and maintenance services. Book a technician or contact us today.',
   
-  // Contact Information - Replace placeholders with real data
+  // Contact Information
   contact: {
-    phone: '+92 300 XXXXXXX',
-    phoneRaw: '+92300XXXXXXX',
-    whatsapp: '92300XXXXXXX',
-    whatsappLink: 'https://wa.me/92300XXXXXXX',
-    email: '[EMAIL ADDRESS]',
-    address: '[SERVICE AREA]',
-    workingHours: '[WORKING HOURS]',
-    serviceArea: '[SERVICE AREA]',
+    phone: '+92 349 8199472',
+    phoneRaw: '+923498199472',
+    whatsapp: '923498199472',
+    whatsappLink: 'https://wa.me/923498199472',
+    email: 'rajakhalilahmad76@gmail.com',
+    address: 'Islamabad, Pakistan',
+    workingHours: '7:00 AM - 8:00 PM (Daily)',
+    serviceArea: 'Islamabad, Pakistan',
   },
 
   // Navigation links
