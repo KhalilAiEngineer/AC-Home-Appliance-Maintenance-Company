@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Suspense } from 'react'
 import Analytics from '@/components/Analytics'
-import CookieConsent from '@/components/CookieConsent'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -80,7 +79,6 @@ export default function RootLayout({
           <Analytics />
         </Suspense>
         {children}
-        <CookieConsent />
       </body>
     </html>
   )
