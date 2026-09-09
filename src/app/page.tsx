@@ -1,7 +1,7 @@
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import TrustStrip from '@/components/TrustStrip'
-import BentoGrid from '@/components/BentoGrid'
+import Services from '@/components/Services'
 import FeaturedAC from '@/components/FeaturedAC'
 import About from '@/components/About'
 import WhyChooseUs from '@/components/WhyChooseUs'
@@ -18,7 +18,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <TrustStrip />
-      <BentoGrid />
+      <Services />
       <FeaturedAC />
       <About />
       <WhyChooseUs />

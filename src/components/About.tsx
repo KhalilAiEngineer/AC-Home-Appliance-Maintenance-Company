@@ -2,63 +2,6 @@
 
 import { useEffect, useRef } from 'react'
 
-const highlights = [
-  {
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-        />
-      </svg>
-    ),
-    title: 'AC & Appliance Expertise',
-  },
-  {
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
-        />
-      </svg>
-    ),
-    title: 'Customer-Focused Service',
-  },
-  {
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-        />
-      </svg>
-    ),
-    title: 'Professional Approach',
-  },
-]
-
 export default function About() {
   const sectionRef = useRef<HTMLElement>(null)
 
@@ -81,79 +24,64 @@ export default function About() {
   }, [])
 
   return (
-    <section
-      ref={sectionRef}
-      id="about"
-      className="section bg-white"
-    >
-      <div className="section-container">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left Content */}
-          <div>
-            <span className="animate-on-scroll trust-badge mb-4 inline-flex">
-              ABOUT US
-            </span>
-            <h2 className="animate-on-scroll animate-delay-100 text-3xl sm:text-4xl font-bold text-navy mb-6">
-              Professional Service. Reliable Solutions.
-            </h2>
-            <p className="animate-on-scroll animate-delay-200 text-gray-600 mb-6">
-              Khalil Ahmad provides professional AC and home appliance repair
-              and maintenance services with a focus on reliable solutions,
-              quality workmanship and customer satisfaction.
-            </p>
-            <p className="animate-on-scroll animate-delay-300 text-gray-600 mb-8">
-              Our team of skilled technicians is dedicated to diagnosing and
-              resolving appliance problems efficiently, ensuring your home
-              comfort is restored quickly.
-            </p>
+    <section ref={sectionRef} id="about" className="relative py-16 sm:py-20 lg:py-24 overflow-hidden">
+      {/* Background */}
+      <div className="absolute inset-0 bg-white" />
 
-            <div className="animate-on-scroll animate-delay-400 space-y-4">
-              {highlights.map((item) => (
-                <div key={item.title} className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-cyan/10 rounded-lg flex items-center justify-center text-blue flex-shrink-0">
-                    {item.icon}
-                  </div>
-                  <span className="font-semibold text-navy">{item.title}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Right Image */}
-          <div className="animate-on-scroll animate-delay-200 relative">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          {/* Image */}
+          <div className="animate-on-scroll relative">
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
               <img
                 src="/images/team.jpg"
-                alt="Professional AC repair team providing reliable service"
+                alt="Khalil Ahmad AC repair team"
                 className="w-full h-auto object-cover aspect-[4/3]"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent" />
+            </div>
+            {/* Experience Badge */}
+            <div className="absolute -bottom-4 -right-2 sm:-right-4 bg-navy text-white rounded-xl p-3 sm:p-4 shadow-xl">
+              <p className="text-2xl sm:text-3xl font-bold text-cyan">10+</p>
+              <p className="text-xs sm:text-sm text-gray-300">Years Experience</p>
+            </div>
+          </div>
+
+          {/* Content */}
+          <div>
+            <span className="animate-on-scroll inline-flex items-center gap-2 px-3 sm:px-4 py-2 bg-cyan/10 border border-cyan/20 rounded-full text-cyan text-xs sm:text-sm font-medium mb-4 sm:mb-6">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              ABOUT US
+            </span>
+
+            <h2 className="animate-on-scroll text-3xl sm:text-4xl font-bold text-navy mb-4 leading-tight">
+              Trusted AC Repair Experts in Islamabad
+            </h2>
+
+            <p className="animate-on-scroll text-base sm:text-lg text-gray-600 mb-6 leading-relaxed">
+              With over a decade of experience, we provide reliable AC and home appliance repair services across Islamabad. Our skilled technicians deliver quality workmanship and transparent pricing.
+            </p>
+
+            <div className="animate-on-scroll grid grid-cols-2 gap-4 mb-8">
+              <div className="bg-light-bg rounded-xl p-4">
+                <p className="text-2xl sm:text-3xl font-bold text-cyan">5000+</p>
+                <p className="text-sm text-gray-600">Jobs Completed</p>
+              </div>
+              <div className="bg-light-bg rounded-xl p-4">
+                <p className="text-2xl sm:text-3xl font-bold text-cyan">4.8</p>
+                <p className="text-sm text-gray-600">Customer Rating</p>
+              </div>
             </div>
 
-            {/* Floating Badge */}
-            <div className="absolute -top-4 -left-4 bg-white rounded-xl p-4 shadow-xl hidden md:block">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-cyan/10 rounded-full flex items-center justify-center">
-                  <svg
-                    className="w-6 h-6 text-cyan"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <p className="font-semibold text-navy">Trusted</p>
-                  <p className="text-sm text-gray-500">Service Provider</p>
-                </div>
-              </div>
+            <div className="animate-on-scroll flex flex-col sm:flex-row gap-3 sm:gap-4">
+              <a href="#contact" className="w-full sm:w-auto bg-gradient-to-r from-cyan to-blue text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-center hover:shadow-lg hover:shadow-cyan/30 transition-all duration-300 hover:-translate-y-0.5">
+                Contact Us
+              </a>
+              <a href="#services" className="w-full sm:w-auto border-2 border-navy text-navy px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-center hover:bg-navy hover:text-white transition-all duration-300">
+                Our Services
+              </a>
             </div>
           </div>
         </div>
