@@ -3,7 +3,6 @@
 import { useEffect } from 'react'
 import { usePathname, useSearchParams } from 'next/navigation'
 
-// Replace with your Google Analytics measurement ID
 const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'
 
 export default function Analytics() {
@@ -12,15 +11,14 @@ export default function Analytics() {
 
   useEffect(() => {
     if (GA_MEASUREMENT_ID && GA_MEASUREMENT_ID !== 'G-XXXXXXXXXX') {
-      // Load Google Analytics script
       const script = document.createElement('script')
       script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`
       script.async = true
       document.head.appendChild(script)
 
       window.dataLayer = window.dataLayer || []
-      function gtag(...args: unknown[]) {
-        window.dataLayer.push(args)
+      const gtag = function (...args: unknown[]) {
+        window.dataLayer?.push(args)
       }
       gtag('js', new Date())
       gtag('config', GA_MEASUREMENT_ID)
@@ -40,10 +38,8 @@ export default function Analytics() {
   return null
 }
 
-// Extend Window interface for dataLayer
 declare global {
   interface Window {
     dataLayer?: unknown[]
-    gtag?: (...args: unknown[]) => void
   }
 }
