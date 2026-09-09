@@ -1,0 +1,11 @@
+# robots.txt for Khalil Ahmad AC Repair
+# https://khalilahmad-acrepair.vercel.app
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://khalilahmad-acrepair.vercel.app/sitemap.xml
+
+# Disallow admin/private paths
+Disallow: /api/

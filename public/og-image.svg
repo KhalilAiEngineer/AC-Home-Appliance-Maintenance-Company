@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#071A2B"/>
+      <stop offset="100%" style="stop-color:#087EA4"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="1000" cy="100" r="200" fill="#00AEEF" opacity="0.1"/>
+  <circle cx="200" cy="500" r="150" fill="#00AEEF" opacity="0.1"/>
+  
+  <!-- AC Unit Icon -->
+  <rect x="500" y="150" width="200" height="120" rx="10" fill="#00AEEF"/>
+  <rect x="510" y="160" width="180" height="80" rx="5" fill="#071A2B"/>
+  <circle cx="600" cy="200" r="20" fill="#00AEEF"/>
+  <path d="M590 200 L600 190 L610 200 L600 210 Z" fill="#071A2B"/>
+  <rect x="520" y="250" width="160" height="10" rx="5" fill="#071A2B"/>
+  
+  <!-- Company Name -->
+  <text x="600" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white">Khalil Ahmad</text>
+  
+  <!-- Tagline -->
+  <text x="600" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#00AEEF">AC & Home Appliance Repair Services</text>
+  
+  <!-- Contact Info -->
+  <text x="600" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#94A3B8">Professional • Reliable • Fast Response</text>
+  
+  <!-- Bottom bar -->
+  <rect x="0" y="580" width="1200" height="50" fill="#00AEEF"/>
+  <text x="600" y="612" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#071A2B">Book a Technician Today</text>
+</svg>

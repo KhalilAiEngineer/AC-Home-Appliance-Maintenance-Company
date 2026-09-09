@@ -1,0 +1,21 @@
+{
+  "name": "Khalil Ahmad AC Repair",
+  "short_name": "AC Repair",
+  "description": "Professional AC & Home Appliance Repair and Maintenance Services",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#071A2B",
+  "theme_color": "#00AEEF",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
